@@ -5,10 +5,12 @@ using namespace std;
 
 
 int Player::stacksize(){
-    return 0;
+    return myCards.size();
  }
 int Player::cardesTaken(){
-    return 0;
+    return this->takenCards.size();
 }
-Player::Player(std::string name){
+Player::Player(std::string newName){
+    this->name = newName;
+    this->playing = false;
 }
